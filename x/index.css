@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px;
+    background-color: #f0f8ff; /* Cor de fundo suave para o corpo da página */
+}
+
+.box {
+    width: 220px;
+    height: auto; 
+    border: 2px solid #007bff; /* Cor da borda das caixas */
+    border-radius: 8px; /* Bordas arredondadas para um visual mais moderno */
+    background-color: #ffffff; /* Cor de fundo da caixa */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Sombra mais forte para profundidade */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efeito de transição suave */
+}
+
+.box:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3); /* Sombra mais forte ao passar o mouse */
+}
+
+.box-content {
+    display: none;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.box.active .box-content {
+    display: block;
+}
+
+.description {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+    padding: 0 10px; /* Espaçamento interno */
+    text-align: center;
+}
+
+mark {
+    background-color: #ffff00; /* Cor de fundo para o texto marcado */
+    color: #000; /* Cor do texto marcado */
+    padding: 2px 4px; /* Espaçamento interno */
+    border-radius: 4px; /* Bordas arredondadas */
+}

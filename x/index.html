@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixas de Tags HTML</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="box" onclick="toggleContent(this)">
+    <div class="box-content">
+            <details>
+                <summary>Mais informações</summary>
+                <p>Este é o conteúdo que aparece quando o menu é expandido.</p>
+            </details>
+            <p class="description">A tag &lt;details&gt;cria um menu suspenso que pode ser expandido para mostrar mais conteúdo.</p>
+        </div>
+</div>
+
+<div class="box" onclick="toggleContent(this)">
+    <div class="box-content">
+        <progress value="70" max="100"></progress>
+        <p class="description">A tag &lt;progress&gt;exibe um indicador visual de progresso.</p>
+    </div>
+</div>
+
+<div class="box" onclick="toggleContent(this)">
+    <div class="box-content">
+        <meter value="0.6">60%</meter>
+        <p class="description">A tag &lt;meter&gt;representa uma medição dentro de um intervalo.</p>
+    </div>
+</div>
+
+<div class="box" onclick="toggleContent(this)">
+    <div class="box-content">
+        <form oninput="result.value = (a.value - b.value)">
+            <input type="number" id="a" value="0">
+            -
+            <input type="number" id="b" value="0">
+            =
+            <output name="result" for="a b">0</output>
+        </form>
+        <p class="description">A tag &lt;output&gt;exibe o resultado de um cálculo ou ação de formulário.</p>
+    </div>
+</div>
+
+<div class="box" onclick="toggleContent(this)">
+    <div class="box-content">
+        <p>Este é um texto com <mark>marcador</mark>.</p>
+        <p class="description">A tag &lt;mark&gt; destaca o texto.</p>
+    </div>
+</div>
+
+<div class="box" onclick="toggleContent(this)">
+    <div class="box-content">
+        <time datetime="2024-08-20T15:00">20 de agosto de 2024, às 15:00</time>
+        <p class="description">A tag &lt;time&gt;representa uma data ou hora.</p>
+    </div>
+</div>
+
+
+<script src="x.js"></script>
+
+</body>
+</html>
